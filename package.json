@@ -1,0 +1,17 @@
+{
+  "name": "manufacturing-inspector",
+  "version": "1.0.0",
+  "description": "Manufacturing Inspector Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd working_project/ManufacturingInspector && python3 -m http.server 3000",
+    "start": "cd working_project/ManufacturingInspector && python3 -m http.server 3000",
+    "build": "echo 'Build complete - static files ready'",
+    "preview": "cd working_project/ManufacturingInspector && python3 -m http.server 4173"
+  },
+  "keywords": ["manufacturing", "inspector", "web-app"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
