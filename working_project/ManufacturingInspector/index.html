@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedForce Games - Futuristic Gaming Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="MedForce Games - Experience the future of gaming with cutting-edge titles across multiple categories">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#BC00FF"/>
+                                <stop offset="100%" style="stop-color:#00F0FF"/>
+                            </linearGradient>
+                        </defs>
+                        <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+                        <polygon points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                        <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                    </svg>
+                    <span class="logo-text">MedForce</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-game="brain-teasers">Brain Teasers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-game="word-scramble">Word Scramble</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-game="snake">Snake</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-game="knowledge-quiz">Knowledge Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-game="math-quiz">Math Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="home">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-logo">
+                    <svg class="hero-logo-icon" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="heroLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#BC00FF"/>
+                                <stop offset="100%" style="stop-color:#00F0FF"/>
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge> 
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <polygon points="60,15 100,37.5 100,82.5 60,105 20,82.5 20,37.5" 
+                                 fill="url(#heroLogoGradient)" 
+                                 stroke="url(#heroLogoGradient)" 
+                                 stroke-width="2"
+                                 filter="url(#glow)"/>
+                        <polygon points="60,30 85,42.5 85,77.5 60,90 35,77.5 35,42.5" 
+                                 fill="none" 
+                                 stroke="#ffffff" 
+                                 stroke-width="2"/>
+                        <circle cx="60" cy="60" r="10" fill="#ffffff"/>
+                        <!-- Additional geometric elements -->
+                        <line x1="35" y1="42.5" x2="85" y2="77.5" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+                        <line x1="85" y1="42.5" x2="35" y2="77.5" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+                    </svg>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-main">MedForce Games</span>
+                    <span class="title-sub">Future of Gaming</span>
+                </h1>
+                
+                <p class="hero-tagline">
+                    Experience cutting-edge gaming technology with immersive worlds, 
+                    advanced AI, and next-generation graphics that push the boundaries of reality.
+                </p>
+                
+                <button class="hero-cta" id="browseGamesBtn">
+                    <span class="cta-text">Browse Games</span>
+                    <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Animated Background Elements -->
+            <div class="hero-bg">
+                <div class="bg-grid"></div>
+                <div class="bg-particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Categories Preview -->
+        <section class="categories" id="categories">
+            <div class="container">
+                <h2 class="section-title">Game Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="brain-teasers">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5a2.5 2.5 0 0 1 2.5-2.5A2.5 2.5 0 0 1 17 4.5c0 .28-.22.5-.5.5s-.5-.22-.5-.5a1.5 1.5 0 0 0-3 0c0 .28-.22.5-.5.5s-.5-.22-.5-.5a1.5 1.5 0 0 0-3 0c0 .28-.22.5-.5.5s-.5-.22-.5-.5A2.5 2.5 0 0 1 9.5 2z"/>
+                                <path d="M12 8a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z"/>
+                                <circle cx="12" cy="18" r="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Brain Teasers</h3>
+                        <p class="card-description">Challenge your mind with riddles, math puzzles, and pattern recognition</p>
+                        <button class="card-link" data-game="brain-teasers">Play Now</button>
+                    </div>
+                    
+                    <div class="category-card" data-category="word-scramble">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 7V5a2 2 0 0 1 2-2h2"/>
+                                <path d="M17 3h2a2 2 0 0 1 2 2v2"/>
+                                <path d="M21 17v2a2 2 0 0 1-2 2h-2"/>
+                                <path d="M7 21H5a2 2 0 0 1-2-2v-2"/>
+                                <path d="M8 8h8v8H8z"/>
+                                <path d="M12 8v8"/>
+                                <path d="M8 12h8"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Word Scramble</h3>
+                        <p class="card-description">Unscramble letters to form words with TTS pronunciation</p>
+                        <button class="card-link" data-game="word-scramble">Play Now</button>
+                    </div>
+                    
+                    <div class="category-card" data-category="snake">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12h18"/>
+                                <path d="M3 6h18"/>
+                                <path d="M3 18h18"/>
+                                <circle cx="6" cy="12" r="1"/>
+                                <circle cx="10" cy="12" r="1"/>
+                                <circle cx="14" cy="12" r="1"/>
+                                <circle cx="18" cy="12" r="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Snake Game</h3>
+                        <p class="card-description">Classic snake with power-ups and cyber neon effects</p>
+                        <button class="card-link" data-game="snake">Play Now</button>
+                    </div>
+                    
+                    <div class="category-card" data-category="knowledge-quiz">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"/>
+                                <path d="M13 11h6a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2z"/>
+                                <path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/>
+                                <path d="M12 2L8 6h8l-4-4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Knowledge Quiz</h3>
+                        <p class="card-description">Test your knowledge across science, tech, history, and geography</p>
+                        <button class="card-link" data-game="knowledge-quiz">Play Now</button>
+                    </div>
+                    
+                    <div class="category-card" data-category="math-quiz">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <path d="M9 9h6v6H9z"/>
+                                <path d="M9 1v6"/>
+                                <path d="M15 1v6"/>
+                                <path d="M9 17v6"/>
+                                <path d="M15 17v6"/>
+                                <path d="M1 9h6"/>
+                                <path d="M17 9h6"/>
+                                <path d="M1 15h6"/>
+                                <path d="M17 15h6"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Math Quiz</h3>
+                        <p class="card-description">Master arithmetic with interactive problems and TTS support</p>
+                        <button class="card-link" data-game="math-quiz">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Game Containers -->
+    <!-- Brain Teasers Game -->
+    <div id="brain-teasers-game" class="game-container">
+        <div class="game-header">
+            <h2 class="game-title">🧠 Brain Teasers & Puzzles</h2>
+            <div class="game-controls">
+                <button id="brain-restart-btn" class="game-btn">Restart</button>
+                <button id="brain-quit-btn" class="game-btn">Quit</button>
+                <button id="brain-home-btn" class="game-btn">Home</button>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <div id="brain-level-select" class="level-select">
+                <h3>Select Level</h3>
+                <div class="levels-grid">
+                    <button class="level-btn unlocked" data-level="1">
+                        <span class="level-number">1</span>
+                        <span class="level-name">Riddles</span>
+                    </button>
+                    <button class="level-btn locked" data-level="2">
+                        <span class="level-number">2</span>
+                        <span class="level-name">Math Puzzles</span>
+                    </button>
+                    <button class="level-btn locked" data-level="3">
+                        <span class="level-number">3</span>
+                        <span class="level-name">Pattern Recognition</span>
+                    </button>
+                    <button class="level-btn locked" data-level="4">
+                        <span class="level-number">4</span>
+                        <span class="level-name">Rebus Puzzles</span>
+                    </button>
+                    <button class="level-btn locked" data-level="5">
+                        <span class="level-number">5</span>
+                        <span class="level-name">Rapid Fire</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="brain-game-play" class="game-play" style="display: none;">
+                <div class="game-stats">
+                    <div class="stat">Level: <span id="brain-current-level">1</span></div>
+                    <div class="stat">Score: <span id="brain-score">0</span></div>
+                    <div class="stat">Hints: <span id="brain-hints">3</span></div>
+                    <div class="stat" id="brain-timer" style="display: none;">Time: <span id="brain-time">60</span>s</div>
+                </div>
+                
+                <div id="brain-question-card" class="question-card">
+                    <div class="question-content">
+                        <h4 id="brain-question-text">Loading question...</h4>
+                        <div id="brain-question-image" class="question-image"></div>
+                    </div>
+                    
+                    <div class="answer-section">
+                        <input type="text" id="brain-answer-input" placeholder="Enter your answer...">
+                        <div class="answer-buttons">
+                            <button id="brain-submit-btn" class="answer-btn">Submit</button>
+                            <button id="brain-hint-btn" class="answer-btn hint-btn">Hint</button>
+                            <button id="brain-skip-btn" class="answer-btn skip-btn">Skip</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="brain-feedback" class="feedback"></div>
+                <button id="brain-back-btn" class="back-btn">← Back to Levels</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Word Scramble Game -->
+    <div id="word-scramble-game" class="game-container">
+        <div class="game-header">
+            <h2 class="game-title">🔤 Word Scramble</h2>
+            <div class="game-controls">
+                <button id="word-restart-btn" class="game-btn">Restart</button>
+                <button id="word-quit-btn" class="game-btn">Quit</button>
+                <button id="word-home-btn" class="game-btn">Home</button>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <div id="word-level-select" class="level-select">
+                <h3>Select Difficulty</h3>
+                <div class="levels-grid">
+                    <button class="level-btn unlocked" data-level="1">
+                        <span class="level-number">1</span>
+                        <span class="level-name">4 Letters</span>
+                    </button>
+                    <button class="level-btn locked" data-level="2">
+                        <span class="level-number">2</span>
+                        <span class="level-name">5 Letters</span>
+                    </button>
+                    <button class="level-btn locked" data-level="3">
+                        <span class="level-number">3</span>
+                        <span class="level-name">6 Letters</span>
+                    </button>
+                    <button class="level-btn locked" data-level="4">
+                        <span class="level-number">4</span>
+                        <span class="level-name">7 Letters</span>
+                    </button>
+                    <button class="level-btn locked" data-level="5">
+                        <span class="level-number">5</span>
+                        <span class="level-name">Expert Mix</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="word-game-play" class="game-play" style="display: none;">
+                <div class="game-stats">
+                    <div class="stat">Level: <span id="word-current-level">1</span></div>
+                    <div class="stat">Score: <span id="word-score">0</span></div>
+                    <div class="stat">Words: <span id="word-progress">0/10</span></div>
+                </div>
+                
+                <div class="word-display">
+                    <div id="scrambled-word" class="scrambled-letters"></div>
+                    <div class="word-input-section">
+                        <input type="text" id="word-input" placeholder="Unscramble the word..." maxlength="10">
+                        <button id="word-submit-btn" class="submit-btn">Submit</button>
+                    </div>
+                    <div class="word-actions">
+                        <button id="word-hint-btn" class="action-btn">💡 Hint</button>
+                        <button id="word-speak-btn" class="action-btn">🔊 Pronounce</button>
+                        <button id="word-shuffle-btn" class="action-btn">🔄 Shuffle</button>
+                    </div>
+                </div>
+                
+                <div id="word-feedback" class="feedback"></div>
+                <button id="word-back-btn" class="back-btn">← Back to Levels</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snake Game -->
+    <div id="snake-game" class="game-container">
+        <div class="game-header">
+            <h2 class="game-title">🐍 Cyber Snake</h2>
+            <div class="game-controls">
+                <button id="snake-restart-btn" class="game-btn">Restart</button>
+                <button id="snake-quit-btn" class="game-btn">Quit</button>
+                <button id="snake-home-btn" class="game-btn">Home</button>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <div id="snake-level-select" class="level-select">
+                <h3>Select Difficulty</h3>
+                <div class="levels-grid">
+                    <button class="level-btn unlocked" data-level="1">
+                        <span class="level-number">1</span>
+                        <span class="level-name">Classic</span>
+                        <span class="level-desc">Speed: Slow</span>
+                    </button>
+                    <button class="level-btn locked" data-level="2">
+                        <span class="level-number">2</span>
+                        <span class="level-name">Advanced</span>
+                        <span class="level-desc">Speed: Medium + Obstacles</span>
+                    </button>
+                    <button class="level-btn locked" data-level="3">
+                        <span class="level-number">3</span>
+                        <span class="level-name">Expert</span>
+                        <span class="level-desc">Speed: Fast + Power-ups</span>
+                    </button>
+                    <button class="level-btn locked" data-level="4">
+                        <span class="level-number">4</span>
+                        <span class="level-name">Master</span>
+                        <span class="level-desc">Speed: Very Fast + Bombs</span>
+                    </button>
+                    <button class="level-btn locked" data-level="5">
+                        <span class="level-number">5</span>
+                        <span class="level-desc">Speed: Extreme + All Features</span>
+                        <span class="level-name">Legendary</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="snake-game-play" class="game-play" style="display: none;">
+                <div class="game-stats">
+                    <div class="stat">Level: <span id="snake-current-level">1</span></div>
+                    <div class="stat">Score: <span id="snake-score">0</span></div>
+                    <div class="stat">High Score: <span id="snake-high-score">0</span></div>
+                    <div class="stat">Length: <span id="snake-length">1</span></div>
+                </div>
+                
+                <div class="snake-container">
+                    <canvas id="snake-canvas" width="400" height="400"></canvas>
+                </div>
+                
+                <div class="snake-controls">
+                    <div class="control-instructions">Use WASD or Arrow Keys to move</div>
+                    <div class="touch-controls">
+                        <button class="touch-btn" data-direction="up">↑</button>
+                        <button class="touch-btn" data-direction="left">←</button>
+                        <button class="touch-btn" data-direction="right">→</button>
+                        <button class="touch-btn" data-direction="down">↓</button>
+                    </div>
+                    <div class="power-up-legend">
+                        <span class="legend-item">🟡 Golden Apple (+5 points)</span>
+                        <span class="legend-item">💣 Bomb (avoid!)</span>
+                        <span class="legend-item">⏰ Time Warp (slow motion)</span>
+                    </div>
+                </div>
+                
+                <button id="snake-back-btn" class="back-btn">← Back to Levels</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Knowledge Quiz Game -->
+    <div id="knowledge-quiz-game" class="game-container">
+        <div class="game-header">
+            <h2 class="game-title">🧠 General Knowledge Quiz</h2>
+            <div class="game-controls">
+                <button id="knowledge-restart-btn" class="game-btn">Restart</button>
+                <button id="knowledge-quit-btn" class="game-btn">Quit</button>
+                <button id="knowledge-home-btn" class="game-btn">Home</button>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <div id="knowledge-level-select" class="level-select">
+                <h3>Select Subject</h3>
+                <div class="levels-grid">
+                    <button class="level-btn unlocked" data-level="1">
+                        <span class="level-number">1</span>
+                        <span class="level-name">Science</span>
+                        <span class="level-desc">Basic Science Facts</span>
+                    </button>
+                    <button class="level-btn locked" data-level="2">
+                        <span class="level-number">2</span>
+                        <span class="level-name">Technology</span>
+                        <span class="level-desc">Computers & Innovation</span>
+                    </button>
+                    <button class="level-btn locked" data-level="3">
+                        <span class="level-number">3</span>
+                        <span class="level-name">History</span>
+                        <span class="level-desc">World Events & Figures</span>
+                    </button>
+                    <button class="level-btn locked" data-level="4">
+                        <span class="level-number">4</span>
+                        <span class="level-name">Geography</span>
+                        <span class="level-desc">Countries & Capitals</span>
+                    </button>
+                    <button class="level-btn locked" data-level="5">
+                        <span class="level-number">5</span>
+                        <span class="level-name">Mixed Expert</span>
+                        <span class="level-desc">Advanced Knowledge</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="knowledge-game-play" class="game-play" style="display: none;">
+                <div class="game-stats">
+                    <div class="stat">Level: <span id="knowledge-current-level">1</span></div>
+                    <div class="stat">Score: <span id="knowledge-score">0</span></div>
+                    <div class="stat">Progress: <span id="knowledge-progress">0/10</span></div>
+                    <div class="stat">Streak: <span id="knowledge-streak">0</span></div>
+                </div>
+                
+                <div id="knowledge-question-card" class="quiz-question-card">
+                    <div class="quiz-spotlight">
+                        <div class="microphone-icon">🎤</div>
+                    </div>
+                    <div class="question-content">
+                        <h4 id="knowledge-question-text">Loading question...</h4>
+                    </div>
+                    
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-option="0"></button>
+                        <button class="quiz-option" data-option="1"></button>
+                        <button class="quiz-option" data-option="2"></button>
+                        <button class="quiz-option" data-option="3"></button>
+                    </div>
+                </div>
+                
+                <div id="knowledge-feedback" class="feedback"></div>
+                <button id="knowledge-back-btn" class="back-btn">← Back to Subjects</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Math Quiz Game -->
+    <div id="math-quiz-game" class="game-container">
+        <div class="game-header">
+            <h2 class="game-title">➕ Math Quiz</h2>
+            <div class="game-controls">
+                <button id="math-restart-btn" class="game-btn">Restart</button>
+                <button id="math-quit-btn" class="game-btn">Quit</button>
+                <button id="math-home-btn" class="game-btn">Home</button>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <div id="math-level-select" class="level-select">
+                <h3>Select Difficulty</h3>
+                <div class="levels-grid">
+                    <button class="level-btn unlocked" data-level="1">
+                        <span class="level-number">1</span>
+                        <span class="level-name">Addition</span>
+                        <span class="level-desc">Basic Addition Problems</span>
+                    </button>
+                    <button class="level-btn locked" data-level="2">
+                        <span class="level-number">2</span>
+                        <span class="level-name">Subtraction</span>
+                        <span class="level-desc">Subtraction Challenges</span>
+                    </button>
+                    <button class="level-btn locked" data-level="3">
+                        <span class="level-number">3</span>
+                        <span class="level-name">Multiplication</span>
+                        <span class="level-desc">Times Tables & More</span>
+                    </button>
+                    <button class="level-btn locked" data-level="4">
+                        <span class="level-number">4</span>
+                        <span class="level-name">Division</span>
+                        <span class="level-desc">Division Problems</span>
+                    </button>
+                    <button class="level-btn locked" data-level="5">
+                        <span class="level-number">5</span>
+                        <span class="level-name">Mixed Operations</span>
+                        <span class="level-desc">All Operations Combined</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="math-game-play" class="game-play" style="display: none;">
+                <div class="game-stats">
+                    <div class="stat">Level: <span id="math-current-level">1</span></div>
+                    <div class="stat">Score: <span id="math-score">0</span></div>
+                    <div class="stat">Progress: <span id="math-progress">0/10</span></div>
+                    <div class="stat">Hints: <span id="math-hints">5</span></div>
+                </div>
+                
+                <div id="math-question-card" class="math-question-card">
+                    <div class="hologram-numbers">
+                        <div class="floating-number">123</div>
+                        <div class="floating-number">456</div>
+                        <div class="floating-number">789</div>
+                    </div>
+                    <div class="question-content">
+                        <h4 id="math-question-text">Loading question...</h4>
+                    </div>
+                    
+                    <div class="math-input-section">
+                        <input type="number" id="math-answer-input" placeholder="Enter your answer...">
+                        <div class="math-buttons">
+                            <button id="math-submit-btn" class="answer-btn">Submit</button>
+                            <button id="math-hint-btn" class="answer-btn hint-btn">Hint</button>
+                            <button id="math-speak-btn" class="answer-btn">🔊 Speak</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="math-feedback" class="feedback"></div>
+                <button id="math-back-btn" class="back-btn">← Back to Levels</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#BC00FF"/>
+                                    <stop offset="100%" style="stop-color:#00F0FF"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                        </svg>
+                        <span class="logo-text">MedForce Games</span>
+                    </div>
+                    <p class="footer-tagline">Making Learning an Adventure</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>About Us</h4>
+                        <p>MedForce Games is an initiative by Youngistaan Foundation to turn learning into an adventure for students in classes 5–6.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:medforce@youngistaan.org">medforce@youngistaan.org</a></li>
+                            <li><a href="tel:+91-XXXXXXXXXX">+91-XXXXXXXXXX</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                    <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedForce Games by Youngistaan Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

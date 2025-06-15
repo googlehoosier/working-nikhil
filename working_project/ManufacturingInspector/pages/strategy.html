@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Games - MedForce Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Master tactical warfare and strategic domination in complex strategy games">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#BC00FF"/>
+                                <stop offset="100%" style="stop-color:#00F0FF"/>
+                            </linearGradient>
+                        </defs>
+                        <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+                        <polygon points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                        <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                    </svg>
+                    <span class="logo-text">MedForce</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="action.html" class="nav-link">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="adventure.html" class="nav-link">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="puzzle.html" class="nav-link">Puzzle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="strategy.html" class="nav-link active">Strategy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="racing.html" class="nav-link">Racing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Category Hero Section -->
+        <section class="category-hero strategy-hero">
+            <div class="hero-container">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z"/>
+                        <path d="M21 19v-6a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z"/>
+                        <path d="M3 13V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/>
+                        <path d="M15 13V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/>
+                    </svg>
+                </div>
+                
+                <h1 class="category-title">Strategy Games</h1>
+                <p class="category-description">
+                    Command armies, build empires, and outthink your opponents in complex strategic battles. 
+                    Every decision matters when victory depends on careful planning and tactical excellence.
+                </p>
+            </div>
+            
+            <!-- Strategy-themed Background -->
+            <div class="category-bg">
+                <div class="bg-grid"></div>
+                <div class="strategy-elements">
+                    <div class="command-center"></div>
+                    <div class="tactical-lines"></div>
+                    <div class="war-room-hud"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Grid Section -->
+        <section class="games-section">
+            <div class="container">
+                <div class="games-header">
+                    <h2 class="section-title">Tactical Warfare</h2>
+                    <p class="section-subtitle">Command your forces and dominate the battlefield</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Strategy Game Cards -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="strategyGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                        <stop offset="100%" style="stop-color:#FF8E53"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#strategyGradient1)"/>
+                                <g transform="translate(200,112.5)">
+                                    <rect x="-60" y="-40" width="120" height="80" fill="white" opacity="0.2" rx="5"/>
+                                    <rect x="-50" y="-30" width="30" height="20" fill="white" opacity="0.8"/>
+                                    <rect x="-10" y="-30" width="30" height="20" fill="white" opacity="0.6"/>
+                                    <rect x="30" y="-30" width="30" height="20" fill="white" opacity="0.7"/>
+                                    <rect x="-50" y="0" width="30" height="20" fill="white" opacity="0.5"/>
+                                    <rect x="-10" y="0" width="30" height="20" fill="white" opacity="0.9"/>
+                                    <rect x="30" y="0" width="30" height="20" fill="white" opacity="0.6"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Command Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Galactic Conquest</h3>
+                            <p class="game-description">Build space fleets and conquer distant worlds in this epic 4X strategy game.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Turn-Based</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="strategyGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#A8E6CF"/>
+                                        <stop offset="100%" style="stop-color:#88D8A3"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#strategyGradient2)"/>
+                                <g transform="translate(200,112.5)">
+                                    <polygon points="-40,-30 0,-50 40,-30 30,0 0,20 -30,0" fill="white" opacity="0.3"/>
+                                    <polygon points="-20,-15 0,-25 20,-15 15,0 0,10 -15,0" fill="white" opacity="0.8"/>
+                                    <circle cx="0" cy="-5" r="4" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Command Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Cyber Dominion</h3>
+                            <p class="game-description">Hack networks and control digital territories in futuristic cyber warfare.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Real-Time</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="strategyGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#strategyGradient3)"/>
+                                <g transform="translate(200,112.5)">
+                                    <rect x="-50" y="-35" width="100" height="70" fill="white" opacity="0.2" rx="10"/>
+                                    <line x1="-30" y1="-20" x2="30" y2="20" stroke="white" stroke-width="3" opacity="0.7"/>
+                                    <line x1="30" y1="-20" x2="-30" y2="20" stroke="white" stroke-width="3" opacity="0.7"/>
+                                    <circle cx="-30" cy="-20" r="6" fill="white"/>
+                                    <circle cx="30" cy="-20" r="6" fill="white"/>
+                                    <circle cx="-30" cy="20" r="6" fill="white"/>
+                                    <circle cx="30" cy="20" r="6" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Command Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Neural Command</h3>
+                            <p class="game-description">Control AI networks and optimize resource distribution in advanced tactical scenarios.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">AI Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="strategyGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb"/>
+                                        <stop offset="100%" style="stop-color:#f5576c"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#strategyGradient4)"/>
+                                <g transform="translate(200,112.5)">
+                                    <rect x="-60" y="-30" width="40" height="60" fill="white" opacity="0.4"/>
+                                    <rect x="-10" y="-30" width="40" height="60" fill="white" opacity="0.6"/>
+                                    <rect x="40" y="-30" width="40" height="60" fill="white" opacity="0.5"/>
+                                    <polygon points="-40,-15 -40,-5 -25,-10" fill="white"/>
+                                    <polygon points="10,-15 10,-5 25,-10" fill="white"/>
+                                    <polygon points="60,-15 60,-5 75,-10" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Command Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Mech Battalion</h3>
+                            <p class="game-description">Deploy mechanical armies and engage in large-scale robotic warfare campaigns.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Battalion Combat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="strategyGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe"/>
+                                        <stop offset="100%" style="stop-color:#00f2fe"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#strategyGradient5)"/>
+                                <g transform="translate(200,112.5)">
+                                    <circle cx="0" cy="0" r="40" fill="white" opacity="0.3"/>
+                                    <circle cx="0" cy="0" r="25" fill="white" opacity="0.5"/>
+                                    <circle cx="0" cy="0" r="10" fill="white" opacity="0.8"/>
+                                    <line x1="-35" y1="0" x2="35" y2="0" stroke="white" stroke-width="2"/>
+                                    <line x1="0" y1="-35" x2="0" y2="35" stroke="white" stroke-width="2"/>
+                                    <line x1="-25" y1="-25" x2="25" y2="25" stroke="white" stroke-width="1"/>
+                                    <line x1="25" y1="-25" x2="-25" y2="25" stroke="white" stroke-width="1"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Command Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Orbital Defense</h3>
+                            <p class="game-description">Protect space stations and coordinate defensive strategies against alien invasions.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Tower Defense</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="strategyGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fa709a"/>
+                                        <stop offset="100%" style="stop-color:#fee140"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#strategyGradient6)"/>
+                                <g transform="translate(200,112.5)">
+                                    <polygon points="-50,-25 -25,-40 25,-40 50,-25 50,25 25,40 -25,40 -50,25" fill="white" opacity="0.3"/>
+                                    <polygon points="-30,-15 -15,-25 15,-25 30,-15 30,15 15,25 -15,25 -30,15" fill="white" opacity="0.6"/>
+                                    <rect x="-10" y="-10" width="20" height="20" fill="white" opacity="0.9"/>
+                                    <rect x="-5" y="-5" width="10" height="10" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Command Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Empire Builder</h3>
+                            <p class="game-description">Construct cities, manage resources, and expand your civilization across multiple planets.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">City Builder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#BC00FF"/>
+                                    <stop offset="100%" style="stop-color:#00F0FF"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                        </svg>
+                        <span class="logo-text">MedForce Games</span>
+                    </div>
+                    <p class="footer-tagline">The Future of Gaming</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="action.html">Action</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                            <li><a href="puzzle.html">Puzzle</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>More Games</h4>
+                        <ul>
+                            <li><a href="strategy.html">Strategy</a></li>
+                            <li><a href="racing.html">Racing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedForce Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Strategy-specific enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add strategy-specific effects
+            const strategyElements = document.querySelector('.strategy-elements');
+            if (strategyElements) {
+                // Animate command center
+                const commandCenter = strategyElements.querySelector('.command-center');
+                if (commandCenter) {
+                    commandCenter.style.animation = 'commandPulse 3s ease-in-out infinite';
+                }
+
+                // Animate tactical lines
+                const tacticalLines = strategyElements.querySelector('.tactical-lines');
+                if (tacticalLines) {
+                    tacticalLines.style.animation = 'tacticSweep 4s linear infinite';
+                }
+
+                // Animate war room HUD
+                const warRoomHud = strategyElements.querySelector('.war-room-hud');
+                if (warRoomHud) {
+                    warRoomHud.style.animation = 'hudScan 5s ease-in-out infinite';
+                }
+            }
+
+            // Enhanced game card interactions for strategy theme
+            const gameCards = document.querySelectorAll('.game-card');
+            gameCards.forEach(card => {
+                const playBtn = card.querySelector('.play-btn');
+                if (playBtn) {
+                    playBtn.addEventListener('click', function() {
+                        // Strategy-themed click effect
+                        this.textContent = 'Deploying...';
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                            this.textContent = 'Command Now';
+                            alert('Strategic command initiated! Game would launch here.');
+                        }, 300);
+                    });
+                }
+
+                // Add strategic grid overlay on hover
+                card.addEventListener('mouseenter', function() {
+                    const overlay = this.querySelector('.game-overlay');
+                    if (overlay) {
+                        overlay.style.background = 'rgba(255, 107, 107, 0.8)';
+                    }
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    const overlay = this.querySelector('.game-overlay');
+                    if (overlay) {
+                        overlay.style.background = 'rgba(0, 0, 0, 0.7)';
+                    }
+                });
+            });
+        });
+
+        // Add strategy-specific styling
+        const strategyStyle = document.createElement('style');
+        strategyStyle.textContent = `
+            .strategy-hero {
+                background: linear-gradient(135deg, 
+                    hsl(var(--background)) 0%, 
+                    hsl(0, 15%, 8%) 50%,
+                    hsl(var(--background)) 100%
+                );
+            }
+
+            .strategy-hero .category-icon svg {
+                color: #FF6B6B;
+                filter: drop-shadow(0 0 20px #FF6B6B);
+            }
+
+            .strategy-elements {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+            }
+
+            .command-center {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                top: 25%;
+                right: 15%;
+                background: radial-gradient(circle, #FF6B6B, transparent);
+                border: 2px solid #FF6B6B;
+                border-radius: 50%;
+                opacity: 0.6;
+            }
+
+            .command-center::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 40px;
+                height: 40px;
+                background: radial-gradient(circle, #FF8E53, transparent);
+                border: 1px solid #FF8E53;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .tactical-lines {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: 
+                    linear-gradient(45deg, transparent 48%, #FF6B6B 49%, #FF6B6B 51%, transparent 52%),
+                    linear-gradient(-45deg, transparent 48%, #FF6B6B 49%, #FF6B6B 51%, transparent 52%);
+                background-size: 100px 100px;
+                opacity: 0.1;
+            }
+
+            .war-room-hud {
+                position: absolute;
+                bottom: 20%;
+                left: 10%;
+                width: 120px;
+                height: 60px;
+                border: 2px solid #FF6B6B;
+                border-radius: 10px;
+                background: linear-gradient(90deg, 
+                    transparent 0%, 
+                    rgba(255, 107, 107, 0.1) 50%, 
+                    transparent 100%
+                );
+                opacity: 0.7;
+            }
+
+            .war-room-hud::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                background: #FF6B6B;
+                border-radius: 3px;
+                opacity: 0.8;
+            }
+
+            .war-room-hud::after {
+                content: '';
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                background: #FF8E53;
+                border-radius: 3px;
+                opacity: 0.8;
+            }
+
+            @keyframes commandPulse {
+                0%, 100% { transform: scale(1); opacity: 0.6; }
+                50% { transform: scale(1.2); opacity: 0.9; }
+            }
+
+            @keyframes tacticSweep {
+                0% { background-position: 0 0, 0 0; }
+                100% { background-position: 100px 100px, -100px 100px; }
+            }
+
+            @keyframes hudScan {
+                0%, 100% { opacity: 0.7; }
+                50% { opacity: 1; box-shadow: 0 0 20px rgba(255, 107, 107, 0.5); }
+            }
+
+            .play-btn {
+                background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+                transition: all 0.3s ease;
+            }
+
+            .play-btn:hover {
+                background: linear-gradient(135deg, #FF8E53, #fa709a);
+                box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+            }
+
+            .game-card:hover {
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 107, 107, 0.3);
+            }
+
+            .section-title {
+                background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .rating {
+                color: #FF6B6B;
+            }
+
+            .game-overlay {
+                transition: background 0.3s ease;
+            }
+        `;
+        document.head.appendChild(strategyStyle);
+    </script>
+</body>
+</html>

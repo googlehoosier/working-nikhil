@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Games - MedForce Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Experience high-speed thrills and competitive racing in futuristic vehicles">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#BC00FF"/>
+                                <stop offset="100%" style="stop-color:#00F0FF"/>
+                            </linearGradient>
+                        </defs>
+                        <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+                        <polygon points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                        <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                    </svg>
+                    <span class="logo-text">MedForce</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="action.html" class="nav-link">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="adventure.html" class="nav-link">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="puzzle.html" class="nav-link">Puzzle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="strategy.html" class="nav-link">Strategy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="racing.html" class="nav-link active">Racing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Category Hero Section -->
+        <section class="category-hero racing-hero">
+            <div class="hero-container">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 16v6M8 22h8M4 12h16l-2-6H6l-2 6z"/>
+                        <circle cx="7" cy="12" r="3"/>
+                        <circle cx="17" cy="12" r="3"/>
+                    </svg>
+                </div>
+                
+                <h1 class="category-title">Racing Games</h1>
+                <p class="category-description">
+                    Feel the adrenaline rush of high-speed competition as you race through futuristic tracks, 
+                    pilot advanced vehicles, and compete against the best drivers in the galaxy.
+                </p>
+            </div>
+            
+            <!-- Racing-themed Background -->
+            <div class="category-bg">
+                <div class="bg-grid"></div>
+                <div class="racing-elements">
+                    <div class="speed-lines"></div>
+                    <div class="racing-track"></div>
+                    <div class="turbo-effects"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Grid Section -->
+        <section class="games-section">
+            <div class="container">
+                <div class="games-header">
+                    <h2 class="section-title">High-Speed Competition</h2>
+                    <p class="section-subtitle">Race to victory in cutting-edge vehicles</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Racing Game Cards -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="racingGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                        <stop offset="100%" style="stop-color:#FF8E53"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#racingGradient1)"/>
+                                <g transform="translate(200,112.5)">
+                                    <ellipse cx="0" cy="0" rx="60" ry="30" fill="white" opacity="0.3"/>
+                                    <rect x="-40" y="-15" width="80" height="30" fill="white" opacity="0.6" rx="15"/>
+                                    <circle cx="-25" cy="10" r="8" fill="white"/>
+                                    <circle cx="25" cy="10" r="8" fill="white"/>
+                                    <rect x="-30" y="-10" width="60" height="10" fill="white" opacity="0.8" rx="5"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Race Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Neon Speed</h3>
+                            <p class="game-description">Race through neon-lit city streets in ultra-fast hovercars with anti-gravity technology.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Circuit Racing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="racingGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#A8E6CF"/>
+                                        <stop offset="100%" style="stop-color:#88D8A3"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#racingGradient2)"/>
+                                <g transform="translate(200,112.5)">
+                                    <path d="M-60,0 Q-30,-20 0,0 Q30,-20 60,0 Q30,20 0,0 Q-30,20 -60,0" fill="white" opacity="0.3"/>
+                                    <ellipse cx="0" cy="0" rx="40" ry="20" fill="white" opacity="0.6"/>
+                                    <rect x="-25" y="-8" width="50" height="16" fill="white" opacity="0.8" rx="8"/>
+                                    <circle cx="-15" cy="6" r="5" fill="white"/>
+                                    <circle cx="15" cy="6" r="5" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Race Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Quantum Rally</h3>
+                            <p class="game-description">Navigate through interdimensional portals in this mind-bending rally championship.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Rally Racing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="racingGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#racingGradient3)"/>
+                                <g transform="translate(200,112.5)">
+                                    <polygon points="-50,-20 50,-20 60,0 50,20 -50,20 -60,0" fill="white" opacity="0.3"/>
+                                    <polygon points="-35,-12 35,-12 42,0 35,12 -35,12 -42,0" fill="white" opacity="0.6"/>
+                                    <rect x="-20" y="-6" width="40" height="12" fill="white" opacity="0.8" rx="6"/>
+                                    <circle cx="-12" cy="8" r="4" fill="white"/>
+                                    <circle cx="12" cy="8" r="4" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Race Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Starship Prix</h3>
+                            <p class="game-description">Pilot advanced starships through asteroid fields and space stations in zero gravity.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Space Racing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="racingGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb"/>
+                                        <stop offset="100%" style="stop-color:#f5576c"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#racingGradient4)"/>
+                                <g transform="translate(200,112.5)">
+                                    <rect x="-50" y="-25" width="100" height="50" fill="white" opacity="0.2" rx="25"/>
+                                    <rect x="-35" y="-15" width="70" height="30" fill="white" opacity="0.5" rx="15"/>
+                                    <rect x="-20" y="-8" width="40" height="16" fill="white" opacity="0.8" rx="8"/>
+                                    <circle cx="-25" cy="12" r="6" fill="white"/>
+                                    <circle cx="25" cy="12" r="6" fill="white"/>
+                                    <rect x="-15" y="-5" width="30" height="6" fill="white" rx="3"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Race Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Cyber Speedway</h3>
+                            <p class="game-description">Race through digital highways in virtual reality with customizable cyber vehicles.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Cyber Racing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="racingGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe"/>
+                                        <stop offset="100%" style="stop-color:#00f2fe"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#racingGradient5)"/>
+                                <g transform="translate(200,112.5)">
+                                    <ellipse cx="0" cy="0" rx="55" ry="35" fill="white" opacity="0.3"/>
+                                    <path d="M-40,-15 L40,-15 L45,0 L40,15 L-40,15 L-45,0 Z" fill="white" opacity="0.6"/>
+                                    <rect x="-25" y="-8" width="50" height="16" fill="white" opacity="0.8" rx="8"/>
+                                    <circle cx="-20" cy="10" r="5" fill="white"/>
+                                    <circle cx="20" cy="10" r="5" fill="white"/>
+                                    <line x1="-30" y1="0" x2="30" y2="0" stroke="white" stroke-width="2"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Race Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Aqua Velocity</h3>
+                            <p class="game-description">Compete in underwater racing championships with advanced submarine vehicles.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Underwater Racing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="racingGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fa709a"/>
+                                        <stop offset="100%" style="stop-color:#fee140"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#racingGradient6)"/>
+                                <g transform="translate(200,112.5)">
+                                    <rect x="-45" y="-20" width="90" height="40" fill="white" opacity="0.3" rx="20"/>
+                                    <polygon points="-35,-12 35,-12 40,0 35,12 -35,12 -40,0" fill="white" opacity="0.6"/>
+                                    <rect x="-20" y="-6" width="40" height="12" fill="white" opacity="0.8" rx="6"/>
+                                    <circle cx="-18" cy="8" r="4" fill="white"/>
+                                    <circle cx="18" cy="8" r="4" fill="white"/>
+                                    <rect x="-12" y="-3" width="24" height="3" fill="white" rx="1"/>
+                                    <polygon points="-8,-8 8,-8 10,-6 8,-4 -8,-4 -10,-6" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Race Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Mech Racer</h3>
+                            <p class="game-description">Control giant mechanical racers in arena-based combat racing tournaments.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Combat Racing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#BC00FF"/>
+                                    <stop offset="100%" style="stop-color:#00F0FF"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                        </svg>
+                        <span class="logo-text">MedForce Games</span>
+                    </div>
+                    <p class="footer-tagline">The Future of Gaming</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="action.html">Action</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                            <li><a href="puzzle.html">Puzzle</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>More Games</h4>
+                        <ul>
+                            <li><a href="strategy.html">Strategy</a></li>
+                            <li><a href="racing.html">Racing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedForce Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Racing-specific enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add racing-specific effects
+            const racingElements = document.querySelector('.racing-elements');
+            if (racingElements) {
+                // Animate speed lines
+                const speedLines = racingElements.querySelector('.speed-lines');
+                if (speedLines) {
+                    speedLines.style.animation = 'speedLines 2s linear infinite';
+                }
+
+                // Animate racing track
+                const racingTrack = racingElements.querySelector('.racing-track');
+                if (racingTrack) {
+                    racingTrack.style.animation = 'trackScroll 5s linear infinite';
+                }
+
+                // Animate turbo effects
+                const turboEffects = racingElements.querySelector('.turbo-effects');
+                if (turboEffects) {
+                    turboEffects.style.animation = 'turboBoost 3s ease-in-out infinite alternate';
+                }
+            }
+
+            // Enhanced game card interactions for racing theme
+            const gameCards = document.querySelectorAll('.game-card');
+            gameCards.forEach(card => {
+                const playBtn = card.querySelector('.play-btn');
+                if (playBtn) {
+                    playBtn.addEventListener('click', function() {
+                        // Racing-themed click effect
+                        this.textContent = 'Starting...';
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                            this.textContent = 'Race Now';
+                            alert('Engines revving! Race would start here.');
+                        }, 300);
+                    });
+                }
+
+                // Add speed blur effect on hover
+                card.addEventListener('mouseenter', function() {
+                    const placeholder = this.querySelector('.game-placeholder');
+                    if (placeholder) {
+                        placeholder.style.filter = 'blur(1px) brightness(1.2)';
+                        placeholder.style.transform = 'scale(1.05)';
+                    }
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    const placeholder = this.querySelector('.game-placeholder');
+                    if (placeholder) {
+                        placeholder.style.filter = '';
+                        placeholder.style.transform = '';
+                    }
+                });
+            });
+        });
+
+        // Add racing-specific styling
+        const racingStyle = document.createElement('style');
+        racingStyle.textContent = `
+            .racing-hero {
+                background: linear-gradient(135deg, 
+                    hsl(var(--background)) 0%, 
+                    hsl(200, 15%, 8%) 50%,
+                    hsl(var(--background)) 100%
+                );
+            }
+
+            .racing-hero .category-icon svg {
+                color: #4facfe;
+                filter: drop-shadow(0 0 20px #4facfe);
+            }
+
+            .racing-elements {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+                overflow: hidden;
+            }
+
+            .speed-lines {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 20px,
+                    rgba(79, 172, 254, 0.3) 22px,
+                    rgba(79, 172, 254, 0.3) 24px
+                );
+                opacity: 0.6;
+            }
+
+            .racing-track {
+                position: absolute;
+                bottom: 20%;
+                left: 0;
+                width: 120%;
+                height: 60px;
+                background: linear-gradient(90deg, 
+                    transparent 0%,
+                    rgba(79, 172, 254, 0.2) 25%,
+                    rgba(0, 242, 254, 0.3) 50%,
+                    rgba(79, 172, 254, 0.2) 75%,
+                    transparent 100%
+                );
+                border-top: 2px solid rgba(79, 172, 254, 0.5);
+                border-bottom: 2px solid rgba(79, 172, 254, 0.5);
+            }
+
+            .racing-track::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 30px,
+                    rgba(255, 255, 255, 0.8) 30px,
+                    rgba(255, 255, 255, 0.8) 50px
+                );
+                transform: translateY(-50%);
+            }
+
+            .turbo-effects {
+                position: absolute;
+                top: 30%;
+                right: 10%;
+                width: 100px;
+                height: 20px;
+                background: linear-gradient(90deg, 
+                    transparent,
+                    rgba(79, 172, 254, 0.8),
+                    rgba(0, 242, 254, 1),
+                    rgba(79, 172, 254, 0.8),
+                    transparent
+                );
+                border-radius: 10px;
+                opacity: 0.7;
+            }
+
+            .turbo-effects::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 10px;
+                width: 80px;
+                height: 5px;
+                background: linear-gradient(90deg, transparent, #4facfe, transparent);
+                border-radius: 2px;
+            }
+
+            .turbo-effects::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 10px;
+                width: 80px;
+                height: 5px;
+                background: linear-gradient(90deg, transparent, #00f2fe, transparent);
+                border-radius: 2px;
+            }
+
+            @keyframes speedLines {
+                0% { transform: translateX(-40px); }
+                100% { transform: translateX(0px); }
+            }
+
+            @keyframes trackScroll {
+                0% { transform: translateX(-100px); }
+                100% { transform: translateX(100px); }
+            }
+
+            @keyframes turboBoost {
+                0% { opacity: 0.7; transform: scaleX(1); }
+                100% { opacity: 1; transform: scaleX(1.2); }
+            }
+
+            .play-btn {
+                background: linear-gradient(135deg, #4facfe, #00f2fe);
+                transition: all 0.3s ease;
+            }
+
+            .play-btn:hover {
+                background: linear-gradient(135deg, #00f2fe, #4facfe);
+                box-shadow: 0 10px 25px rgba(79, 172, 254, 0.4);
+            }
+
+            .game-card:hover {
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(79, 172, 254, 0.3);
+            }
+
+            .section-title {
+                background: linear-gradient(135deg, #4facfe, #00f2fe);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .rating {
+                color: #4facfe;
+            }
+
+            .game-placeholder {
+                transition: all 0.3s ease;
+            }
+        `;
+        document.head.appendChild(racingStyle);
+    </script>
+</body>
+</html>

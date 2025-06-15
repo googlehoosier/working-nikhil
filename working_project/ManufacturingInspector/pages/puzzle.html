@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Games - MedForce Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Challenge your mind with innovative puzzle games that test logic and creativity">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#BC00FF"/>
+                                <stop offset="100%" style="stop-color:#00F0FF"/>
+                            </linearGradient>
+                        </defs>
+                        <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+                        <polygon points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                        <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                    </svg>
+                    <span class="logo-text">MedForce</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="action.html" class="nav-link">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="adventure.html" class="nav-link">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="puzzle.html" class="nav-link active">Puzzle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="strategy.html" class="nav-link">Strategy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="racing.html" class="nav-link">Racing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Category Hero Section -->
+        <section class="category-hero puzzle-hero">
+            <div class="hero-container">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h2v4h4V4h8v8"/>
+                        <path d="M4 6v6a2 2 0 0 0 2 2h2"/>
+                        <path d="M18 10h4v4h-4z"/>
+                    </svg>
+                </div>
+                
+                <h1 class="category-title">Puzzle Games</h1>
+                <p class="category-description">
+                    Exercise your mind with challenging puzzles that test logic, creativity, and problem-solving skills. 
+                    From brain teasers to complex challenges, discover games that make thinking fun.
+                </p>
+            </div>
+            
+            <!-- Puzzle-themed Background -->
+            <div class="category-bg">
+                <div class="bg-grid"></div>
+                <div class="puzzle-elements">
+                    <div class="floating-pieces"></div>
+                    <div class="brain-waves"></div>
+                    <div class="logic-circuits"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Grid Section -->
+        <section class="games-section">
+            <div class="container">
+                <div class="games-header">
+                    <h2 class="section-title">Mind-Bending Challenges</h2>
+                    <p class="section-subtitle">Test your intellect with our collection of brain games</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Puzzle Game Cards -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="puzzleGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#puzzleGradient1)"/>
+                                <rect x="160" y="80" width="80" height="65" fill="white" opacity="0.3" rx="5"/>
+                                <rect x="170" y="90" width="25" height="25" fill="white" opacity="0.8"/>
+                                <rect x="205" y="90" width="25" height="25" fill="white" opacity="0.6"/>
+                                <rect x="170" y="120" width="25" height="25" fill="white" opacity="0.4"/>
+                                <rect x="205" y="120" width="25" height="25" fill="white" opacity="0.9"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Solve Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Quantum Blocks</h3>
+                            <p class="game-description">Manipulate quantum blocks to solve physics-based puzzles in this mind-bending game.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Logic Puzzle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="puzzleGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffecd2"/>
+                                        <stop offset="100%" style="stop-color:#fcb69f"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#puzzleGradient2)"/>
+                                <circle cx="200" cy="112.5" r="50" fill="white" opacity="0.3"/>
+                                <path d="M175 87.5 Q200 75 225 87.5 Q237.5 112.5 225 137.5 Q200 150 175 137.5 Q162.5 112.5 175 87.5" fill="white" opacity="0.7"/>
+                                <circle cx="200" cy="112.5" r="15" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Solve Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Neural Maze</h3>
+                            <p class="game-description">Navigate through complex neural networks and unlock the secrets of the digital mind.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Brain Teaser</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="puzzleGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#a8edea"/>
+                                        <stop offset="100%" style="stop-color:#fed6e3"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#puzzleGradient3)"/>
+                                <g transform="translate(200,112.5)">
+                                    <polygon points="-30,-20 -10,-30 10,-30 30,-20 30,20 10,30 -10,30 -30,20" fill="white" opacity="0.4"/>
+                                    <polygon points="-15,-10 -5,-15 5,-15 15,-10 15,10 5,15 -5,15 -15,10" fill="white" opacity="0.8"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Solve Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Hex Enigma</h3>
+                            <p class="game-description">Unravel hexagonal patterns and decode ancient geometric mysteries.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Pattern Matching</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="puzzleGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#d299c2"/>
+                                        <stop offset="100%" style="stop-color:#fef9d7"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#puzzleGradient4)"/>
+                                <g transform="translate(200,112.5)">
+                                    <rect x="-40" y="-25" width="20" height="50" fill="white" opacity="0.6"/>
+                                    <rect x="-10" y="-25" width="20" height="50" fill="white" opacity="0.8"/>
+                                    <rect x="20" y="-25" width="20" height="50" fill="white" opacity="0.4"/>
+                                    <circle cx="-30" cy="0" r="8" fill="white"/>
+                                    <circle cx="0" cy="0" r="8" fill="white"/>
+                                    <circle cx="30" cy="0" r="8" fill="white"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Solve Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Tower Logic</h3>
+                            <p class="game-description">Stack and arrange towers according to complex logical rules and constraints.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Strategy Puzzle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="puzzleGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#89f7fe"/>
+                                        <stop offset="100%" style="stop-color:#66a6ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#puzzleGradient5)"/>
+                                <g transform="translate(200,112.5)">
+                                    <line x1="-40" y1="-30" x2="40" y2="30" stroke="white" stroke-width="4" opacity="0.6"/>
+                                    <line x1="-40" y1="30" x2="40" y2="-30" stroke="white" stroke-width="4" opacity="0.6"/>
+                                    <circle cx="-40" cy="-30" r="6" fill="white"/>
+                                    <circle cx="40" cy="-30" r="6" fill="white"/>
+                                    <circle cx="-40" cy="30" r="6" fill="white"/>
+                                    <circle cx="40" cy="30" r="6" fill="white"/>
+                                    <circle cx="0" cy="0" r="10" fill="white" opacity="0.8"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Solve Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Circuit Solver</h3>
+                            <p class="game-description">Connect nodes and complete electrical circuits to power up futuristic devices.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Circuit Puzzle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="puzzleGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fdbb2d"/>
+                                        <stop offset="100%" style="stop-color:#22c1c3"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#puzzleGradient6)"/>
+                                <g transform="translate(200,112.5)">
+                                    <rect x="-30" y="-30" width="20" height="20" fill="white" opacity="0.8"/>
+                                    <rect x="-5" y="-30" width="20" height="20" fill="white" opacity="0.6"/>
+                                    <rect x="20" y="-30" width="20" height="20" fill="white" opacity="0.4"/>
+                                    <rect x="-30" y="-5" width="20" height="20" fill="white" opacity="0.6"/>
+                                    <rect x="-5" y="-5" width="20" height="20" fill="white" opacity="0.9"/>
+                                    <rect x="20" y="-5" width="20" height="20" fill="white" opacity="0.7"/>
+                                    <rect x="-30" y="20" width="20" height="20" fill="white" opacity="0.5"/>
+                                    <rect x="-5" y="20" width="20" height="20" fill="white" opacity="0.8"/>
+                                    <rect x="20" y="20" width="20" height="20" fill="white" opacity="0.6"/>
+                                </g>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Solve Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Matrix Mind</h3>
+                            <p class="game-description">Manipulate data matrices and solve complex algorithmic puzzles in cyberspace.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Algorithm Puzzle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#BC00FF"/>
+                                    <stop offset="100%" style="stop-color:#00F0FF"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                        </svg>
+                        <span class="logo-text">MedForce Games</span>
+                    </div>
+                    <p class="footer-tagline">The Future of Gaming</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="action.html">Action</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                            <li><a href="puzzle.html">Puzzle</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>More Games</h4>
+                        <ul>
+                            <li><a href="strategy.html">Strategy</a></li>
+                            <li><a href="racing.html">Racing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedForce Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Puzzle-specific enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add puzzle-specific effects
+            const puzzleElements = document.querySelector('.puzzle-elements');
+            if (puzzleElements) {
+                // Animate floating puzzle pieces
+                const pieces = puzzleElements.querySelector('.floating-pieces');
+                if (pieces) {
+                    pieces.style.animation = 'pieceFloat 5s ease-in-out infinite';
+                }
+
+                // Animate brain waves
+                const waves = puzzleElements.querySelector('.brain-waves');
+                if (waves) {
+                    waves.style.animation = 'brainWave 3s ease-in-out infinite alternate';
+                }
+
+                // Animate logic circuits
+                const circuits = puzzleElements.querySelector('.logic-circuits');
+                if (circuits) {
+                    circuits.style.animation = 'circuitPulse 4s linear infinite';
+                }
+            }
+
+            // Enhanced game card interactions for puzzle theme
+            const gameCards = document.querySelectorAll('.game-card');
+            gameCards.forEach(card => {
+                const playBtn = card.querySelector('.play-btn');
+                if (playBtn) {
+                    playBtn.addEventListener('click', function() {
+                        // Puzzle-themed click effect
+                        this.textContent = 'Thinking...';
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                            this.textContent = 'Solve Now';
+                            alert('Puzzle challenge activated! Game would launch here.');
+                        }, 300);
+                    });
+                }
+
+                // Add puzzle piece hover effect
+                card.addEventListener('mouseenter', function() {
+                    const placeholder = this.querySelector('.game-placeholder');
+                    if (placeholder) {
+                        placeholder.style.filter = 'hue-rotate(30deg)';
+                    }
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    const placeholder = this.querySelector('.game-placeholder');
+                    if (placeholder) {
+                        placeholder.style.filter = '';
+                    }
+                });
+            });
+        });
+
+        // Add puzzle-specific styling
+        const puzzleStyle = document.createElement('style');
+        puzzleStyle.textContent = `
+            .puzzle-hero {
+                background: linear-gradient(135deg, 
+                    hsl(var(--background)) 0%, 
+                    hsl(260, 15%, 8%) 50%,
+                    hsl(var(--background)) 100%
+                );
+            }
+
+            .puzzle-hero .category-icon svg {
+                color: #9c88ff;
+                filter: drop-shadow(0 0 20px #9c88ff);
+            }
+
+            .puzzle-elements {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+            }
+
+            .floating-pieces {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 30%;
+                right: 20%;
+                background: linear-gradient(45deg, #9c88ff, #667eea);
+                clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+                opacity: 0.6;
+            }
+
+            .floating-pieces::before {
+                content: '';
+                position: absolute;
+                top: 60px;
+                left: 20px;
+                width: 30px;
+                height: 30px;
+                background: linear-gradient(45deg, #667eea, #764ba2);
+                clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+            }
+
+            .brain-waves {
+                position: absolute;
+                width: 120px;
+                height: 60px;
+                bottom: 30%;
+                left: 15%;
+                background: repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 10px,
+                    #9c88ff 10px,
+                    #9c88ff 12px
+                );
+                opacity: 0.4;
+                border-radius: 30px;
+            }
+
+            .logic-circuits {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                top: 15%;
+                left: 10%;
+                background: 
+                    linear-gradient(90deg, #9c88ff 2px, transparent 2px),
+                    linear-gradient(0deg, #9c88ff 2px, transparent 2px);
+                background-size: 20px 20px;
+                opacity: 0.3;
+                border-radius: 10px;
+            }
+
+            @keyframes pieceFloat {
+                0%, 100% { transform: translateY(0px) rotate(0deg); }
+                50% { transform: translateY(-20px) rotate(45deg); }
+            }
+
+            @keyframes brainWave {
+                0% { transform: scaleX(1); opacity: 0.4; }
+                100% { transform: scaleX(1.3); opacity: 0.7; }
+            }
+
+            @keyframes circuitPulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 0.6; }
+            }
+
+            .play-btn {
+                background: linear-gradient(135deg, #9c88ff, #667eea);
+                transition: all 0.3s ease;
+            }
+
+            .play-btn:hover {
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                box-shadow: 0 10px 25px rgba(156, 136, 255, 0.4);
+            }
+
+            .game-card:hover {
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(156, 136, 255, 0.3);
+            }
+
+            .section-title {
+                background: linear-gradient(135deg, #9c88ff, #667eea);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .game-placeholder {
+                transition: filter 0.3s ease;
+            }
+
+            .rating {
+                color: #9c88ff;
+            }
+        `;
+        document.head.appendChild(puzzleStyle);
+    </script>
+</body>
+</html>

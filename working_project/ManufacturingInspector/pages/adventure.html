@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Games - MedForce Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Embark on epic adventures with immersive storytelling and exploration">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#BC00FF"/>
+                                <stop offset="100%" style="stop-color:#00F0FF"/>
+                            </linearGradient>
+                        </defs>
+                        <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+                        <polygon points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                        <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                    </svg>
+                    <span class="logo-text">MedForce</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="action.html" class="nav-link">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="adventure.html" class="nav-link active">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="puzzle.html" class="nav-link">Puzzle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="strategy.html" class="nav-link">Strategy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="racing.html" class="nav-link">Racing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Category Hero Section -->
+        <section class="category-hero adventure-hero">
+            <div class="hero-container">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="3,11 22,2 13,21 11,13 3,11"/>
+                    </svg>
+                </div>
+                
+                <h1 class="category-title">Adventure Games</h1>
+                <p class="category-description">
+                    Embark on epic journeys through mysterious worlds filled with wonder, discovery, 
+                    and unforgettable characters. Every adventure tells a story worth experiencing.
+                </p>
+            </div>
+            
+            <!-- Adventure-themed Background -->
+            <div class="category-bg">
+                <div class="bg-grid"></div>
+                <div class="adventure-elements">
+                    <div class="floating-compass"></div>
+                    <div class="treasure-glow"></div>
+                    <div class="mystical-particles"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Grid Section -->
+        <section class="games-section">
+            <div class="container">
+                <div class="games-header">
+                    <h2 class="section-title">Epic Adventures Await</h2>
+                    <p class="section-subtitle">Discover worlds beyond imagination</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Adventure Game Cards -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="advGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#advGradient1)"/>
+                                <circle cx="200" cy="112.5" r="40" fill="white" opacity="0.3"/>
+                                <path d="M180 95 L200 112.5 L220 95 L210 107.5 L220 130 L200 112.5 L180 130 L190 107.5 Z" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Start Journey</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Mystic Realms</h3>
+                            <p class="game-description">Explore magical kingdoms filled with ancient secrets and mystical creatures.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Story Mode</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="advGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffecd2"/>
+                                        <stop offset="100%" style="stop-color:#fcb69f"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#advGradient2)"/>
+                                <rect x="170" y="90" width="60" height="45" fill="white" opacity="0.4"/>
+                                <polygon points="185,105 185,120 215,112.5" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Start Journey</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Desert Nomads</h3>
+                            <p class="game-description">Cross vast deserts and uncover the mysteries of an ancient civilization.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Open World</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="advGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#a8edea"/>
+                                        <stop offset="100%" style="stop-color:#fed6e3"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#advGradient3)"/>
+                                <circle cx="200" cy="112.5" r="35" fill="white" opacity="0.3"/>
+                                <polygon points="190,100 190,125 215,112.5" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Start Journey</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Ocean Depths</h3>
+                            <p class="game-description">Dive into underwater worlds and discover the secrets of the deep ocean.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Exploration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="advGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#d299c2"/>
+                                        <stop offset="100%" style="stop-color:#fef9d7"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#advGradient4)"/>
+                                <rect x="175" y="95" width="50" height="35" fill="white" opacity="0.4"/>
+                                <polygon points="185,107.5 185,122.5 210,115" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Start Journey</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Sky Islands</h3>
+                            <p class="game-description">Soar through floating islands in the clouds and uncover aerial mysteries.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Platformer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="advGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#89f7fe"/>
+                                        <stop offset="100%" style="stop-color:#66a6ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#advGradient5)"/>
+                                <circle cx="200" cy="112.5" r="40" fill="white" opacity="0.3"/>
+                                <polygon points="185,100 185,125 215,112.5" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Start Journey</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Crystal Caverns</h3>
+                            <p class="game-description">Navigate through luminous caves filled with precious gems and hidden dangers.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Cave Explorer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="advGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fdbb2d"/>
+                                        <stop offset="100%" style="stop-color:#22c1c3"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#advGradient6)"/>
+                                <rect x="175" y="95" width="50" height="35" fill="white" opacity="0.4"/>
+                                <polygon points="185,107.5 185,122.5 210,115" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Start Journey</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Time Wanderer</h3>
+                            <p class="game-description">Travel through different time periods and shape the course of history.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Time Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#BC00FF"/>
+                                    <stop offset="100%" style="stop-color:#00F0FF"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                        </svg>
+                        <span class="logo-text">MedForce Games</span>
+                    </div>
+                    <p class="footer-tagline">The Future of Gaming</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="action.html">Action</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                            <li><a href="puzzle.html">Puzzle</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>More Games</h4>
+                        <ul>
+                            <li><a href="strategy.html">Strategy</a></li>
+                            <li><a href="racing.html">Racing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedForce Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Adventure-specific enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add adventure-specific effects
+            const adventureElements = document.querySelector('.adventure-elements');
+            if (adventureElements) {
+                // Animate floating compass
+                const compass = adventureElements.querySelector('.floating-compass');
+                if (compass) {
+                    compass.style.animation = 'compassFloat 4s ease-in-out infinite';
+                }
+
+                // Animate treasure glow
+                const treasure = adventureElements.querySelector('.treasure-glow');
+                if (treasure) {
+                    treasure.style.animation = 'treasureGlow 3s ease-in-out infinite alternate';
+                }
+
+                // Animate mystical particles
+                const particles = adventureElements.querySelector('.mystical-particles');
+                if (particles) {
+                    particles.style.animation = 'particleSwirl 8s linear infinite';
+                }
+            }
+
+            // Enhanced game card interactions for adventure theme
+            const gameCards = document.querySelectorAll('.game-card');
+            gameCards.forEach(card => {
+                const playBtn = card.querySelector('.play-btn');
+                if (playBtn) {
+                    playBtn.addEventListener('click', function() {
+                        // Adventure-themed click effect
+                        this.textContent = 'Embarking...';
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                            this.textContent = 'Start Journey';
+                            alert('Adventure begins! Game would launch here.');
+                        }, 300);
+                    });
+                }
+            });
+        });
+
+        // Add adventure-specific styling
+        const adventureStyle = document.createElement('style');
+        adventureStyle.textContent = `
+            .adventure-hero {
+                background: linear-gradient(135deg, 
+                    hsl(var(--background)) 0%, 
+                    hsl(240, 15%, 8%) 50%,
+                    hsl(var(--background)) 100%
+                );
+            }
+
+            .adventure-hero .category-icon svg {
+                color: #22c1c3;
+                filter: drop-shadow(0 0 20px #22c1c3);
+            }
+
+            .adventure-elements {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+            }
+
+            .floating-compass {
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                top: 20%;
+                right: 15%;
+                background: radial-gradient(circle, #fdbb2d, #22c1c3);
+                border-radius: 50%;
+                opacity: 0.7;
+            }
+
+            .floating-compass::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 30px;
+                height: 2px;
+                background: white;
+                transform: translate(-50%, -50%);
+            }
+
+            .floating-compass::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 2px;
+                height: 30px;
+                background: white;
+                transform: translate(-50%, -50%);
+            }
+
+            .treasure-glow {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                bottom: 25%;
+                left: 10%;
+                background: radial-gradient(circle, #ffd700, transparent);
+                border-radius: 50%;
+                opacity: 0.6;
+            }
+
+            .mystical-particles {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2322c1c3' fill-opacity='0.1'%3E%3Ccircle cx='20' cy='20' r='2'/%3E%3C/g%3E%3C/svg%3E");
+            }
+
+            @keyframes compassFloat {
+                0%, 100% { transform: translateY(0px) rotate(0deg); }
+                50% { transform: translateY(-15px) rotate(180deg); }
+            }
+
+            @keyframes treasureGlow {
+                0% { transform: scale(1); opacity: 0.6; }
+                100% { transform: scale(1.2); opacity: 0.8; }
+            }
+
+            @keyframes particleSwirl {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            .play-btn {
+                background: linear-gradient(135deg, #fdbb2d, #22c1c3);
+                transition: all 0.3s ease;
+            }
+
+            .play-btn:hover {
+                background: linear-gradient(135deg, #22c1c3, #fdbb2d);
+                box-shadow: 0 10px 25px rgba(34, 193, 195, 0.4);
+            }
+
+            .game-card:hover {
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(34, 193, 195, 0.3);
+            }
+
+            .section-title {
+                background: linear-gradient(135deg, #fdbb2d, #22c1c3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        `;
+        document.head.appendChild(adventureStyle);
+    </script>
+</body>
+</html>

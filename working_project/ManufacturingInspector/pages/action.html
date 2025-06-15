@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Games - MedForce Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Explore high-octane action games with intense combat and adrenaline-fueled adventures">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#BC00FF"/>
+                                <stop offset="100%" style="stop-color:#00F0FF"/>
+                            </linearGradient>
+                        </defs>
+                        <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+                        <polygon points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                        <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                    </svg>
+                    <span class="logo-text">MedForce</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="action.html" class="nav-link active">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="adventure.html" class="nav-link">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="puzzle.html" class="nav-link">Puzzle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="strategy.html" class="nav-link">Strategy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="racing.html" class="nav-link">Racing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Category Hero Section -->
+        <section class="category-hero">
+            <div class="hero-container">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        <path d="M8 11l2 2 4-4"/>
+                    </svg>
+                </div>
+                
+                <h1 class="category-title">Action Games</h1>
+                <p class="category-description">
+                    Dive into heart-pounding adventures with intense combat, explosive action sequences, 
+                    and adrenaline-fueled gameplay that will keep you on the edge of your seat.
+                </p>
+            </div>
+            
+            <!-- Animated Background -->
+            <div class="category-bg">
+                <div class="bg-grid"></div>
+                <div class="action-effects">
+                    <div class="explosion-effect"></div>
+                    <div class="laser-beam"></div>
+                    <div class="combat-sparks"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Grid Section -->
+        <section class="games-section">
+            <div class="container">
+                <div class="games-header">
+                    <h2 class="section-title">Featured Action Games</h2>
+                    <p class="section-subtitle">Experience the ultimate in high-octane gaming</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Game Card 1 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gameGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                        <stop offset="100%" style="stop-color:#FF8E53"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#gameGradient1)"/>
+                                <circle cx="200" cy="112.5" r="40" fill="white" opacity="0.2"/>
+                                <polygon points="185,97.5 185,127.5 215,112.5" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Cyber Warfare</h3>
+                            <p class="game-description">Navigate through futuristic battlefields in this intense cyberpunk shooter.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Online Multiplayer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 2 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gameGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#A8E6CF"/>
+                                        <stop offset="100%" style="stop-color:#88D8A3"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#gameGradient2)"/>
+                                <rect x="150" y="80" width="100" height="65" fill="white" opacity="0.3"/>
+                                <polygon points="175,95 175,125 205,110" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Tactical Strike</h3>
+                            <p class="game-description">Lead your squad through dangerous missions with strategic combat mechanics.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Single Player</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 3 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gameGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea"/>
+                                        <stop offset="100%" style="stop-color:#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#gameGradient3)"/>
+                                <circle cx="200" cy="112.5" r="50" fill="white" opacity="0.2"/>
+                                <path d="M175 87.5 L200 112.5 L225 87.5 L215 102.5 L225 137.5 L200 112.5 L175 137.5 L185 102.5 Z" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Arena Champions</h3>
+                            <p class="game-description">Fight your way to victory in this competitive arena-based combat game.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">PvP Arena</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 4 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gameGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb"/>
+                                        <stop offset="100%" style="stop-color:#f5576c"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#gameGradient4)"/>
+                                <rect x="170" y="90" width="60" height="45" fill="white" opacity="0.3"/>
+                                <polygon points="185,105 185,120 215,112.5" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Neon Rush</h3>
+                            <p class="game-description">Speed through neon-lit cityscapes in this fast-paced parkour action game.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Time Trials</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 5 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gameGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe"/>
+                                        <stop offset="100%" style="stop-color:#00f2fe"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#gameGradient5)"/>
+                                <circle cx="200" cy="112.5" r="35" fill="white" opacity="0.4"/>
+                                <polygon points="190,100 190,125 215,112.5" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Space Marines</h3>
+                            <p class="game-description">Defend humanity against alien threats in this sci-fi action shooter.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★★</span>
+                                <span class="players">Co-op Campaign</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 6 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <svg class="game-placeholder" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gameGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fa709a"/>
+                                        <stop offset="100%" style="stop-color:#fee140"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="225" fill="url(#gameGradient6)"/>
+                                <rect x="175" y="95" width="50" height="35" fill="white" opacity="0.3"/>
+                                <polygon points="185,107.5 185,122.5 210,115" fill="white"/>
+                            </svg>
+                            <div class="game-overlay">
+                                <button class="play-btn">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Mech Warriors</h3>
+                            <p class="game-description">Pilot massive mechs in epic battles across diverse battlefields.</p>
+                            <div class="game-stats">
+                                <span class="rating">★★★★☆</span>
+                                <span class="players">Team Battle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#BC00FF"/>
+                                    <stop offset="100%" style="stop-color:#00F0FF"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                        </svg>
+                        <span class="logo-text">MedForce Games</span>
+                    </div>
+                    <p class="footer-tagline">The Future of Gaming</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="action.html">Action</a></li>
+                            <li><a href="adventure.html">Adventure</a></li>
+                            <li><a href="puzzle.html">Puzzle</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>More Games</h4>
+                        <ul>
+                            <li><a href="strategy.html">Strategy</a></li>
+                            <li><a href="racing.html">Racing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedForce Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Category-specific enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add action-specific effects
+            const actionEffects = document.querySelector('.action-effects');
+            if (actionEffects) {
+                // Animate explosion effects
+                const explosions = actionEffects.querySelectorAll('.explosion-effect');
+                explosions.forEach((explosion, index) => {
+                    setTimeout(() => {
+                        explosion.style.animation = `explode 2s ease-out infinite`;
+                    }, index * 500);
+                });
+
+                // Animate laser beams
+                const lasers = actionEffects.querySelectorAll('.laser-beam');
+                lasers.forEach(laser => {
+                    laser.style.animation = 'laserSweep 3s linear infinite';
+                });
+            }
+
+            // Game card interactions
+            const gameCards = document.querySelectorAll('.game-card');
+            gameCards.forEach(card => {
+                const playBtn = card.querySelector('.play-btn');
+                if (playBtn) {
+                    playBtn.addEventListener('click', function() {
+                        // Add click effect
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                            // Here you would typically navigate to the game
+                            alert('Game would launch here!');
+                        }, 150);
+                    });
+                }
+            });
+        });
+
+        // Add category-specific CSS
+        const categoryStyle = document.createElement('style');
+        categoryStyle.textContent = `
+            .category-hero {
+                min-height: 60vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+                background: linear-gradient(135deg, 
+                    hsl(var(--background)) 0%, 
+                    hsl(var(--background-secondary)) 100%
+                );
+            }
+
+            .category-icon svg {
+                width: 80px;
+                height: 80px;
+                color: var(--gradient-purple);
+                filter: drop-shadow(0 0 20px var(--gradient-purple));
+                animation: iconPulse 2s ease-in-out infinite;
+                margin-bottom: var(--space-md);
+            }
+
+            @keyframes iconPulse {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+            }
+
+            .category-title {
+                text-align: center;
+                margin-bottom: var(--space-md);
+                background: linear-gradient(135deg, var(--gradient-purple), var(--gradient-blue));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .category-description {
+                text-align: center;
+                max-width: 600px;
+                margin: 0 auto;
+                font-size: 1.1rem;
+                line-height: 1.8;
+            }
+
+            .action-effects {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+            }
+
+            .explosion-effect {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: radial-gradient(circle, var(--gradient-purple), transparent);
+                top: 20%;
+                left: 10%;
+                opacity: 0;
+            }
+
+            .laser-beam {
+                position: absolute;
+                width: 2px;
+                height: 100vh;
+                background: linear-gradient(180deg, transparent, var(--gradient-blue), transparent);
+                right: 20%;
+                opacity: 0.5;
+            }
+
+            @keyframes explode {
+                0% { transform: scale(0); opacity: 0; }
+                50% { transform: scale(1); opacity: 1; }
+                100% { transform: scale(2); opacity: 0; }
+            }
+
+            @keyframes laserSweep {
+                0% { transform: translateX(-50px); opacity: 0; }
+                50% { opacity: 1; }
+                100% { transform: translateX(50px); opacity: 0; }
+            }
+
+            .games-section {
+                padding: var(--space-2xl) 0;
+            }
+
+            .games-header {
+                text-align: center;
+                margin-bottom: var(--space-2xl);
+            }
+
+            .section-subtitle {
+                color: hsl(var(--text-muted));
+                font-size: 1.1rem;
+                margin-top: var(--space-sm);
+            }
+
+            .games-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: var(--space-xl);
+            }
+
+            .game-card {
+                background: linear-gradient(145deg, 
+                    hsla(var(--background-secondary), 0.8), 
+                    hsla(var(--background), 0.9)
+                );
+                border: 1px solid hsla(var(--text-muted), 0.1);
+                border-radius: var(--border-radius-lg);
+                overflow: hidden;
+                transition: var(--transition);
+                position: relative;
+            }
+
+            .game-card:hover {
+                transform: translateY(-10px);
+                border-color: var(--gradient-purple);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(188, 0, 255, 0.3);
+            }
+
+            .game-image {
+                position: relative;
+                overflow: hidden;
+                aspect-ratio: 16/9;
+            }
+
+            .game-placeholder {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .game-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: var(--transition);
+            }
+
+            .game-card:hover .game-overlay {
+                opacity: 1;
+            }
+
+            .play-btn {
+                background: linear-gradient(135deg, var(--gradient-purple), var(--gradient-blue));
+                color: white;
+                border: none;
+                padding: var(--space-sm) var(--space-lg);
+                border-radius: var(--border-radius);
+                font-weight: 600;
+                cursor: pointer;
+                transition: var(--transition);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .play-btn:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 25px rgba(188, 0, 255, 0.5);
+            }
+
+            .game-info {
+                padding: var(--space-lg);
+            }
+
+            .game-title {
+                margin-bottom: var(--space-sm);
+                color: hsl(var(--text-primary));
+            }
+
+            .game-description {
+                color: hsl(var(--text-muted));
+                margin-bottom: var(--space-md);
+                line-height: 1.6;
+            }
+
+            .game-stats {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .rating {
+                color: var(--gradient-blue);
+                font-size: 1.1rem;
+            }
+
+            .players {
+                color: hsl(var(--text-secondary));
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            @media (max-width: 768px) {
+                .games-grid {
+                    grid-template-columns: 1fr;
+                    gap: var(--space-lg);
+                }
+                
+                .category-hero {
+                    min-height: 50vh;
+                    padding: var(--space-xl) var(--space-sm);
+                }
+            }
+        `;
+        document.head.appendChild(categoryStyle);
+    </script>
+</body>
+</html>
